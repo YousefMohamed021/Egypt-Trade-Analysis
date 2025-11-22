@@ -80,7 +80,7 @@ with DAG(
     default_args=default_args,
     description="Fetch UN Comtrade and World Bank data daily",
     schedule="@daily",  
-    start_date=datetime(2025, 10, 1),
+    start_date=datetime(2025,9,29),
     catchup=False,
     tags=["data_fetch"],
 ) as dag:
@@ -103,3 +103,4 @@ with DAG(
     )
 
     fetch_imports >> fetch_exports >> fetch_worldbank
+
