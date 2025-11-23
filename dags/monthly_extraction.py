@@ -69,7 +69,7 @@ def fetch_worldbank_data(start_year=2020, end_year=2024):
 
 
 default_args = {
-    "owner": "airflow",
+    "owner": "data team",
     "depends_on_past": False,
     "retries": 1,
     "retry_delay": timedelta(minutes=5),
