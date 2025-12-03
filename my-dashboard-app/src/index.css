@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Optional: Make the background slightly grey by default to match our design */
+body {
+  @apply bg-slate-50;
+}
