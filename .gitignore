@@ -4,6 +4,10 @@ venv/
 *.pyc
 pycache/
 
+venv_linux/
+*.pyc
+pycache/
+
 Data
 
 raw_data/
