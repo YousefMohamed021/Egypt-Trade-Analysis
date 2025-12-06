@@ -79,7 +79,7 @@ with DAG(
     dag_id="monthly_data_extraction",
     default_args=default_args,
     description="Fetch UN Comtrade and World Bank data daily",
-    schedule="@daily",  
+    schedule="@monthly",  
     start_date=datetime(2025,9,29),
     catchup=False,
     tags=["data_fetch"],
@@ -103,4 +103,5 @@ with DAG(
     )
 
     fetch_imports >> fetch_exports >> fetch_worldbank
+
 
