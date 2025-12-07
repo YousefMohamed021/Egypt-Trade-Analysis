@@ -2,11 +2,11 @@
 
 An end-to-end Data Engineering project that automates the extraction, transformation, and analysis of Egypt's trade data (UN Comtrade) and economic indicators (World Bank). The insights are served via a modern React dashboard.
 
-📌 Project Overview
+<h2>📌 Project Overview</h2>
 
 This project correlates Egypt's international trade activities (Imports/Exports) with key economic indicators (GDP, Inflation, Debt) to visualize economic trends over time.
 
-Key Features:
+<h3>Key Features:</h3>
 
 ETL Pipeline: Automated extraction from public APIs using Python & Airflow.
 
@@ -16,39 +16,39 @@ Orchestration: Directed Acyclic Graphs (DAGs) manage the Extract -> Load -> Expo
 
 Interactive Dashboard: A React application visualized with Tailwind CSS.
 
-🏗️ Architecture
+<h2>🏗️ Architecture</h2>
 
-Extract: Python scripts pull JSON data from UNComtrade & World Bank APIs.
-Load: Data is normalized and loaded into a PostgreSQL Schema.
-Visualize: The React Frontend consumes the static JSON for fast, responsive analytics.
+* Extract: Python scripts pull JSON data from UNComtrade & World Bank APIs.
+* Load: Data is normalized and loaded into a PostgreSQL Schema.
+* Visualize: The React Frontend consumes the static JSON for fast, responsive analytics.
 
-🚀 Getting Started
+<h2>🚀 Getting Started</h2>
 
-Prerequisites:
+<h3>Prerequisites:</h3>
 
-Docker & Docker Compose
-Python 3.10+
-Node.js & npm (for the dashboard)
+* Docker (for PostgreSQL)
+* Python 3.10+
+* Node.js & npm (for the dashboard)
 
-📊 Data Model (Star Schema)
+<h2>📊 Data Model (Star Schema)</h2>
 
 The database uses a Galaxy Schema
 
-Fact Tables:
+<h3>Fact Tables:</h3>
 
-fact_trade: Trade flow metrics (Value, Weight).
-fact_economy: Economic indicators (Value).
+* fact_trade: Stores quantitative measures related to trade transactions.
+* fact_economy: Stores quantitative measures for various economic indicators.
 
-Dimensions:
+<h3>Dimensions:</h3>
 
-dim_date: Time dimension.
-dim_country: Partner country details.
-dim_commodity: Product categories.
-dim_flow: Trade direction (Import/Export).
-dim_indicator: Economic indicator metadata.
+* dim_date: Stores time attributes shared by both fact tables.
+* dim_country: Stores country attributes shared by both fact tables.
+* dim_commodity: Stores commodity attributes.
+* dim_flow: Stores trade flow direction attributes (Import/Export).
+* dim_indicator: Stores economic indicator attributes.
 
-🛠️ Tech Stack Details
+<h2>🛠️ Tech Stack Details</h2>
 
-Backend: Python, Pandas, Psycopg2.
-Frontend: React, Vite, Tailwind CSS, Recharts.
-DevOps: Docker, Git.
+* Backend: Python, Pandas, Psycopg2.
+* Frontend: React, Vite, Tailwind CSS, Recharts.
+* DevOps: Docker, Git.
