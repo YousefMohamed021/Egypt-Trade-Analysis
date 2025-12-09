@@ -30,7 +30,7 @@ Interactive Dashboard: A React application visualized with Tailwind CSS.
 * Python 3.10+
 * Node.js & npm (for the dashboard)
 
-<h2>📊 Data Model (Star Schema)</h2>
+<h2>📊 Data Model</h2>
 
 The database uses a Galaxy Schema
 
