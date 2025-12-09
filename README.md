@@ -1,6 +1,6 @@
 # Egypt-Trade-Analyzer
 
-An end-to-end Data Engineering project that automates the extraction, transformation, and analysis of Egypt's trade data (UN Comtrade) and economic indicators (World Bank). The insights are served via a modern React dashboard.
+An end-to-end Data Engineering project that automates the extraction, transformation, and analysis of Egypt's Imports / Exports data (UN Comtrade) and economic indicators (World Bank). The insights are served via a modern React dashboard.
 
 <h2>📌 Project Overview</h2>
 
@@ -10,7 +10,7 @@ This project correlates Egypt's international trade activities (Imports/Exports)
 
 ETL Pipeline: Automated extraction from public APIs using Python & Airflow.
 
-Data Warehouse: Star Schema design in PostgreSQL for efficient querying.
+Data Warehouse: Galaxy Schema design in PostgreSQL for efficient querying.
 
 Orchestration: Directed Acyclic Graphs (DAGs) manage the Extract -> Load -> Export workflow.
 
